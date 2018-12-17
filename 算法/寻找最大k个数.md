@@ -90,7 +90,7 @@ int main() {
 
 代码如下：
 
-```
+```c
 void heapifymin(int Array[], int i, int size) {
 	if (i < size) {
 		int left = 2 * i + 1;
@@ -180,7 +180,7 @@ int main() {
 
 解法四：这也是寻找Ｎ个数中的第Ｋ大的数算法。利用二分的方法求取 TOP k 问题。 首先查找 max 和 min，然后计算出 mid = (max + min) / 2 该算法的实质是寻找最大的 K 个数中最小的一个。
 
-```
+``` c
 const int N = 8;
 const int K = 4;
 
@@ -245,7 +245,7 @@ int main() {
 
 代码如下：
 
-```
+```c
 for(sumCount = 0, v = MAXN -1; v >=0; v--)
 {
     cumCount += count[v];
