@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>filter-url颜色赋值技术</title>
+  <style>
+    .pic {
+      filter: url(#svgFilter);
+    }
+
+    .pic1 {
+      filter: url(#svgFilter1);
+    }
+  </style>
+</head>
+
+<body>
+  <svg>
+    <filter id="svgFilter">
+      <feColorMatrix values="0 0 0 0 0
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 1 0" />
+    </filter>
+
+    <filter id="svgFilter1">
+      <feColorMatrix values="0 0 0 0 1
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 1 0" />
+    </filter>
+  </svg>
+  <img src="./svg.png" class="pic" alt="">
+  <img src="./Black_on_white.png" class="pic1" alt="">
+</body>
+
+</html>

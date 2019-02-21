@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>background-blend-mode混合模式变色方案</title>
+    <style>
+      .pic {
+        width: 200px;
+        height: 200px;
+        background-image: url(./black_on_white.png);
+        background-size: cover;
+      }
+
+      .pic1 {
+        background-image: url(./black_on_white.png), linear-gradient(#f00, #f00);
+        background-blend-mode: lighten;
+        background-size: cover;
+      }
+
+      .pic2 {
+        background-image: url(./black_on_white.png), linear-gradient(#f00, #00f);
+        background-blend-mode: lighten;
+        background-size: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pic"></div>
+    <div class="pic pic1"></div>
+    <div class="pic pic2"></div>
+  </body>
+</html>

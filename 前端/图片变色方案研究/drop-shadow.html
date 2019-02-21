@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>filter:drop-shadow 利用投影实现赋色</title>
+    <style>
+      .pic {
+        border-right: 20px solid transparent;
+        filter: drop-shadow(100px 0 0 #1296db);
+      }
+
+      .container {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container .pic2 {
+        background: url(./user_black.png) no-repeat center;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        border-left: 40px transparent solid;
+        filter: drop-shadow(-40px 0 0 #1296db);
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom:40px">
+      <img src="./user_black.png" alt="" class="pic" />
+    </div>
+    <div style="margin-bottom:40px">
+      这个下载下来的 #1296db
+      <img src="./user_blue.png" alt="" />
+    </div>
+
+    <div class="container">
+      <img src="./user_black.png" alt="" class="pic2" />
+    </div>
+  </body>
+</html>
