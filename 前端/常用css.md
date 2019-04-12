@@ -33,3 +33,8 @@
   }
 }
 ```
+
+#### 平滑滚动
+```css
+scroll-behavior:smooth;
+```
